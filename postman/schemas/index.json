@@ -1,0 +1,41 @@
+{
+    "endpoints": {
+        "/users": {
+            "methods": {
+                "GET": {
+                    "description": "Get a list of all users",
+                    "response": {
+                        "status": 200,
+                        "data": [
+                            {
+                                "id": 1,
+                                "name": "John Doe",
+                                "email": "john.doe@example.com"
+                            },
+                            {
+                                "id": 2,
+                                "name": "Jane Smith",
+                                "email": "jane.smith@example.com"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "/users/:id": {
+            "methods": {
+                "GET": {
+                    "description": "Get details of a specific user",
+                    "response": {
+                        "status": 200,
+                        "data": {
+                            "id": 1,
+                            "name": "John Doe",
+                            "email": "john.doe@example.com"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
